@@ -1,0 +1,49 @@
+<section class="blog">
+  <div class="container">
+  <h2 class="section-title">Блог</h2>
+
+  <article class="blog__listing">
+    @@loop('blog-card.html', [
+    {
+        "img": "assets/images/blog/theatre.jpg",
+        "img_webp": "assets/images/blog/theatre.webp",
+        "img_tablet_webp": "assets/images/blog/theatre_tablet.webp",
+        "alt": "theatre",
+        "datetime": "2022-11-26",
+        "time": "26.11.2022",
+        "title": "Фотосессия в стенах Театра драмы",
+        "description": "Организовывая фотосессию для локального бренда одежды мы смогливоплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было ",
+        "svg": "assets/icons/symbols.svg#view",
+        "class": "blog-card__line" 
+    },
+    {
+        "img": "assets/images/blog/VR.jpg",
+        "img_webp": "assets/images/blog/vr.webp",
+        "img_tablet_webp": "assets/images/blog/vr_tablet.webp",
+        "alt": "VR",
+        "datetime": "2022-11-05",
+        "time": "05.11.2022",
+        "title": "Выставка VR в Томске",
+        "description": "Клуб виртуальной реальности - это другие миры. яркие эмоции. новыйопыт. ... Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.",
+        "svg": "assets/icons/symbols.svg#view",
+        "class": "blog-card__line"  
+    },
+    {
+        "img": "assets/images/blog/rocking-radio.jpg",
+        "img_webp": "assets/images/blog/rocking_radio.webp",
+        "img_tablet_webp": "assets/images/blog/rocking_radio_tablet.webp",
+        "alt": "rocking radio",
+        "datetime": "2022-11-01",
+        "time": "01.11.2022",
+        "title": "Rocking radio в заброшенном ангаре",
+        "description": "15 электрогенераторов, километры проводов и пару тонн света. Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.",
+        "svg": "assets/icons/symbols.svg#view",
+        "class": "display-none"  
+    }
+    ])
+  </article>
+  <div class="blog__view-link">
+    <a href="#" class="view-link">Смотреть все</a>
+  </div>
+</div>
+</section>

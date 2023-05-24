@@ -1,0 +1,48 @@
+<section class="contacts">
+    <div class="container">
+
+  <h2 class="section-title">контакты</h2>
+
+  <div class="contacts-map">
+    <div class="contacts-map__adresses">
+        @@loop('contact-card.html', [
+        {
+            "icon": "assets/icons/symbols.svg#Ellipse-35",
+            "title": "Томск, Белая 8",
+            "floor": "2 этаж ",
+            "location": "оф. 207-208 "
+        },
+        {
+            "icon": "assets/icons/symbols.svg#house",
+            "title": "Отдел аренды",
+            "floor": "+7 499 350 0730",
+            "location": "hi@tagree.ru "
+        },
+        {
+            "icon": "assets/icons/symbols.svg#star",
+            "title": "Отдел мероприятий ",
+            "floor": "+7 499 350 0730",
+            "location": "hi@tagree.ru"
+        }
+
+        ])
+    </div>
+
+    <div class="contacts-map__map">
+        <picture class="contacts-map__map-picture">
+<!--             <svg class="contacts-map__map-ellipse" width="18" height="18">
+                <use xlink:href="assets/icons/symbols.svg#Ellipse-35"></use>
+            </svg>
+
+            <svg class="contacts-map__map-logo" width="79" height="57">
+                <use xlink:href="assets/icons/symbols.svg#logo-mini"></use>
+            </svg> -->
+
+            <img src="assets/images/contacts/map.jpg" alt="" class="contacts-map__map-image">
+        </picture>
+
+
+    </div>
+  </div>
+</div>
+</section>

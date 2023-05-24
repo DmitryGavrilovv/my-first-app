@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: @font_size_16;
+  line-height: 1.375;
+  font-family: @font_OpenSans;
+  color: #1f1e1e;
+}
+
+body,
+html {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 147px;
+  background-color: @gray;
+  background-image: url(..assets/images/main-layout/noise.jpg),
+    url(../assets/images/main-layout/bg.jpg);
+  background-position: 0 0, 0 0;
+  background-size: auto, 100% auto;
+  background-repeat: repeat, repeat-y;
+  color: @black;
+  font-family: @font_OpenSans;
+  font-size: @font_size_16;
+  font-weight: @font_weight_400;
+  font-style: normal;
+  line-height: 1.375;
+  overflow-y: hidden;
+
+  @media @bw1660 {
+    padding-top: 111px;
+  }
+  @media @bw768 {
+    padding-top: 70px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1414px;
+  margin: 0 auto;
+  padding: 0 40px 0 40px;
+
+  @media @bw1340 {
+    padding: 0 30px 0 30px;
+  }
+
+  @media @bw768 {
+    padding: 0 20px 0 20px;
+  }
+}
+
+.page-main {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+.lines {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.line {
+  max-width: 618px;
+  min-height: 2px;
+  width: 100%;
+  background: linear-gradient(
+    270deg,
+    #1c1b1b 0%,
+    rgba(255, 255, 255, 0) 82.86%
+  );
+
+  &--transformed {
+    transform: rotate(180deg);
+  }
+
+  &:last-child {
+    margin-left: 98px;
+
+    @media @bw1660 {
+      margin-left: 92px;
+    }
+
+    @media @bw1340 {
+      margin-left: 52px;
+    }
+
+    @media @bw768 {
+      margin-left: 20px;
+    }
+  }
+}
+
+.page-footer {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.quote {
+  margin: 0 auto 100px;
+
+  &-text {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+a {
+  color: @black;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+input,
+textarea,
+select {
+  box-shadow: none;
+  outline: none;
+  color: @black;
+}
+textarea {
+  resize: none;
+}
+
+.show-nav {
+  body {
+    @media @bw1020 {
+      overflow: hidden;
+    }
+  }
+  .page-header__nav {
+    @media @bw1020 {
+      transform: translateX(0);
+    }
+  }
+  .page-header__nav-toggle {
+    &::before {
+      transform: translate(0px, 6px) rotate(45deg);
+      box-shadow: none;
+    }
+    &::after {
+      transform: translate(0px, -6px) rotate(-45deg);
+    }
+  }
+}
+
+input,
+textarea {
+  &::placeholder {
+    color: #6C6C6C;
+  }
+}
+input:focus,
+textarea:focus {
+  &::placeholder {
+    color: transparent
+  }
+}

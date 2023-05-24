@@ -1,0 +1,33 @@
+<div class="blog-card">
+  <picture class="blog-card__picture">
+    <source
+      media="(max-width: 450px)"
+      type="image/webp"
+      srcset="@@img_webp"
+    />
+    <source media="(max-width: 450px)" srcset="@@img" />
+
+    <source
+      media="(max-width: 1169px)"
+      type="image/webp"
+      srcset="@@img_tablet_webp"
+    />
+
+    <source
+      media="(max-width: 1169px)"
+      srcset="@@img_tablet_webp"
+    />
+
+    <img src="@@img" alt="@@alt" class="blog-card__image" />
+  </picture>
+
+  <div class="blog-card__text">
+    <time datetime="@@datetime" class="blog-card__time">@@time</time>
+    <h4 class="blog-card__title card-title">@@title</h4>
+    <p class="blog-card__description card-description">@@description</p>
+  </div>
+  <svg class="blog-card__icon slider-icon" width="92" height="60">
+    <use xlink:href="@@svg"></use>
+  </svg>
+</div>
+<hr class="@@class" />

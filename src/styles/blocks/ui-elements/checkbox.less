@@ -1,0 +1,61 @@
+.check {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 24px;
+    padding-top: 2px;
+    padding-left: 24px;
+    color: @black;
+    cursor: pointer;
+    
+    &__input {
+        .is-hidden();
+
+        &:checked {
+            & ~ .check__mark {
+              background-color: @black;
+              &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 7px;
+                top: 2px;
+                width: 6px;
+                height: 12px;
+                border-bottom: 2px solid @white;
+                border-right: 2px solid @white;
+                transform: rotate(45deg);
+              }
+            }
+          }
+      }
+
+      &__mark {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        border: 1px solid @black;
+      }
+
+      &__label {
+        margin-left: 15px;
+        font-weight: @font_weight_300;
+        font-size: @font_size_14;
+
+        @media @bw768 {
+          font-size: font_size_12;
+          max-width: 241px;
+          font-weight: @font_weight_400;
+        }
+
+        &--s {
+          font-size: @font_size_14;
+          line-height: calc(19/14);
+        }
+      }
+  }

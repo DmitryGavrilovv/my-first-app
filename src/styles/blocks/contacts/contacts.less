@@ -1,0 +1,198 @@
+.contacts {
+    width: 100%;
+    margin-bottom: 150px;
+
+    @media @bw1660 {
+    margin-bottom: 130px;
+    }
+  
+    @media @bw1340 {
+    margin-bottom: 100px;
+    }
+  
+    @media @bw768 {
+    margin-bottom: 100px;
+    }
+}
+
+.contacts-map {
+
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    grid-gap: 178px;
+
+        @media @bw1340 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 99px;
+        }
+
+        @media @bw768 {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 59px;
+        }
+
+    &__adresses {
+
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0 -67px;
+
+        @media @bw1340 {
+            grid-row-start: 2;
+            flex-direction: row;
+            margin-bottom: 40px;
+        }
+
+        @media @bw768 {
+            grid-row-start: 2;
+            flex-direction: column;
+            margin: 0;
+
+        }
+        
+
+        &-card {
+            display: flex;
+            margin-bottom: 67px;
+            max-width: 400px;
+
+            @media @bw1340 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin: 0 auto;
+            }
+    
+            @media @bw768 {
+                display: flex;
+                flex-direction: row;
+                max-width: 280px;
+                text-align: start;
+                margin-left: 0;
+            }
+        }
+
+        &-square {
+            width: 110px;
+            height: 110px;
+            background-color: @black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 54px;
+
+            @media @bw1340 {
+                margin: 0 auto;
+                margin-bottom: 30px;
+            }
+    
+            @media @bw768 {
+                width: 65px;
+                height: 65px;
+                margin-right: 30px;
+            }
+        }
+
+        &-icon {
+            max-width: 100%;
+        }
+        
+        &-text {
+            margin: 12px 0 12px;
+
+            @media @bw1340 {
+                margin: 0;
+            }
+    
+            @media @bw768 {
+                margin: 0;
+            }
+        }
+
+        &-title {
+            font-style: normal;
+            font-weight: @font_weight_600;
+            font-size: @font_size_20;
+            line-height: calc(27/20);
+            margin-bottom: 10px;
+
+            @media @bw1340 {
+                font-size: @font_size_18;
+                font-weight: @font_weight_700;
+            }
+    
+            @media @bw768 {
+                font-size: @font_size_14;
+            }
+        }
+
+        &-floor {
+            line-height: calc(22/16);
+            margin: 0 auto;
+
+            @media @bw1340 {
+
+            }
+    
+            @media @bw768 {
+                font-size: @font_size_14;
+            }
+        }
+
+        &-location {
+            line-height: calc(22/16);
+            margin-top: 5px;
+
+            @media @bw1340 {
+                margin-top: 0px;
+            }
+    
+            @media @bw768 {
+                margin-top: 0px;
+            }
+        }
+    }
+
+    &__map {
+        position: relative;
+        
+        @media @bw1340 {
+            grid-row-start: 1;
+        }
+
+        @media @bw768 {
+            grid-row-start: 1;
+        }
+
+        &-picture {
+            display: block;
+            position: relative;
+            max-width: 752px;
+            max-width: 100%;
+
+            @media @bw1340 {
+                margin: 0 auto;
+            }
+        }
+
+        &-image {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        &-ellipse {
+            display: block;
+            position: absolute;
+            margin: 336px 367px 148px 376px;
+        }
+
+        &-logo {
+            display: block;
+            position: absolute;
+            margin: 274px 285px 162px 388px;
+        }
+    }
+}
